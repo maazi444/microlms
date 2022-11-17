@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/* font-family: 'Vollkorn', serif; */
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-size: calc(8px + 0.5vw);
+  line-height: calc(21px + 0.6vw);
+}
+
+h1 {
+  font-size: 1.6em;
+  line-height: calc(30px + 1vw);
+}
+
+h2 {
+  font-size: 1.4em;
+  line-height: calc(26px + 1vw);
+}
+
+h3 {
+  font-size: 1.2em;
+  line-height: calc(24px + 1vw);
+}
+
+p {
+  font-size: calc(08px + 0.5vw);
+}
+
+p,
+h1,
+h2,
+h3 {
+  color: #1c1d1f;
+}
+
+.side-center {
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.wrapper {
+  max-width: 1140px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.sr-only {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #fff;
+  background-color: #1c1d1f;
+  min-width: 120px;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.button svg {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}
+
+.button span {
+  display: none;
+}
+
+.logo-svg{
+  width: 1.5em;
+  height: 1.5em;
+  stroke: #1b58b3;
+}
+
+.brand{
+  display: flex;
+  align-items: center;
+}
+
+.brand span{
+  display: block;
+}
+
+@media (min-width: 600px) {
+  .button span {
+    display: initial;
+  }
+}
+
+.button--icon {
+  min-width: initial;
+  padding: 0.5rem;
+}
+
+.menu-btn {
+  width: 1rem;
+  height: 1rem;
+  color: #fff;
+}
+
+/* Home Courses Start */
+
+.site-introduction {
+  width: 100%;
+  padding-top: 3em;
+}
+
+.si-heading {
+  font-size: 2.3em;
+  font-weight: 700;
+  font-family: "Vollkorn", serif;
+}
+
+.si-text {
+  font-weight: 500;
+}
+
+.tabs-row{
+  margin-top: 0.5em;
+}
+
+.chip {
+  background-color: #e5e5e5;
+  border: none;
+  height: 36px;
+  outline: none;
+  font-size: 14px;
+  color: #757575;
+  border-radius: 4px;
+  cursor: pointer;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  font-weight: 600;
+  margin-top: .3em;
+  margin-bottom: .3em;
+}
+
+.chip-active{
+  color: #333;
+  background-color: #e0e0e0;
+}
+
+.chip:hover{
+  background-color: #e0e0e0;
+  transition: .2s ease-in;
+}
+
+.tabs-content-wrapper{
+  margin-top: 1em;
+  border: 1px solid #e1e1e1;
+  padding: 1em;
+}
+
+.tabcontent{
+  display: none;
+}
+
+.courses-tab-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.home-course-card{
+  display: inline-block;
+  margin: 1em;
+}
+
+.c-card-body{
+  width: 15rem;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.c-card-text{
+  width: 100%;
+  text-overflow: ellipsis;
+}
+
+.c-card-heading{
+  font-weight: 900;
+  line-height: calc(0.6em + 0.5vw);
+}
+
+.c-card-authors{
+  font-size: 0.8em;
+  color: #757575;
+}
+
+.c-card-badge{
+  margin: .4rem .2rem;
+  padding: .4rem .8rem;
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: -.02rem;
+}
+
+.c-card-badge-green{
+  background-color: #eceb98;
+  color: #3d3c0a;
+}
+
+.c-card-badge-red{
+  background-color: #fcaea0;
+  color: #612012;
+}
+
+/* Home Courses End */
+
+.cta-section{
+  width: 100%;
+  padding: 1em 0;
+}
+
+.call-action{
+  width: 100%;
+  height: 20em;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/bubbles.jpg) no-repeat center;
+  background-size: cover;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-heading{
+  color: #fff;
+  font-size: 4em;
+  font-weight: 800;
+  text-align: center;
+}
+
+.cta-button{
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: 600;
+  background: none;
+  display: inline-block;
+  margin-top: 1.5em;
+  border-radius: 5px;
+  padding: 0.6em 1em;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.cta-button:hover{
+  border: 2px solid transparent;
+  background-color: #fff;
+  color: #333;
+  transition: 0.2s ease-in-out;
+}
